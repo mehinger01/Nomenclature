@@ -88,7 +88,7 @@
   <div class="topbar">
     <button class="difficulty active" data-level="2">Level 1: Small Triangle</button>
     <button class="difficulty" data-level="3">Level 2: Add a Row</button>
-    <button class="difficulty" data-level="4">Level 3: Add 1 More</button>
+    <button class="difficulty" data-level="4">Level 3: Add Row</button>
   </div>
 </header>
 
@@ -168,7 +168,8 @@ const outerDistractors = [
   'ZnO', 'zinc oxide',
   'AgNO3', 'silver nitrate',
   'BaCl2', 'barium chloride',
-  'SiO2', 'silicon dioxide',s
+  'SiO2', 'silicon dioxide',
+  'PbO2', 'lead(IV) oxide'
 ];
 
 function isOuterDistractor(text){
@@ -178,7 +179,7 @@ function isOuterDistractor(text){
 function levelMeta(n){
   if(n===2) return ['Level 1: Small Triangle','Starter puzzle: 4 pieces forming a small triangle.'];
   if(n===3) return ['Level 2: Add a Row','Medium puzzle: 9 pieces. One full outer row has been added.'];
-  return ['Level 3: Add 1 More','Larger puzzle: 16 pieces. A third row is added around the puzzle.'];
+  return ['Level 3: Add Row','Larger puzzle: 16 pieces. A third row is added around the puzzle.'];
 }
 
 function fitSizes(n){
